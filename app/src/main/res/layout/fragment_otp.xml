@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        style="@style/wh.AuthLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/wh.Text.T01"
+            android:text="@string/wh_verification_code" />
+
+        <TextView
+            android:id="@+id/otp_sent_message"
+            style="@style/wh.Text.T02"
+            android:layout_marginTop="@dimen/wh_standard_margin_s02"
+            android:text="@string/wh_otp_sent_message" />
+
+        <com.mukesh.OtpView
+            android:id="@+id/otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/wh_standard_margin_m02"
+            android:inputType="number"
+            android:textColor="@color/colorDuo"
+            app:OtpItemCount="6"
+            app:OtpItemHeight="@dimen/wh_otp_box_size"
+            app:OtpItemWidth="@dimen/wh_otp_box_size"
+            app:OtpLineColor="@color/colorDuo"
+            app:OtpViewType="line" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/wh_standard_margin_m02">
+
+            <TextView
+                android:id="@+id/ticker"
+                style="@style/wh.Text"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/wh_standard_margin_s01"
+                android:text="@string/wh_resend_otp_in"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/resend_otp"
+                style="@style/wh.Text.Caps"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/ticker"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/wh_resend"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:ignore="Autofill,TextFields" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_verify"
+            style="@style/wh.Button.B1"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/wh_standard_margin_m01"
+            android:text="@string/wh_verify" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progress_bar_layout"
+        layout="@layout/wh_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/wh_progress_bar_top_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <dimen name="wh_standard_padding_p01">10dp</dimen>
+
+    <dimen name="wh_standard_margin_s01">5dp</dimen>
+    <dimen name="wh_standard_margin_s02">10dp</dimen>
+
+    <dimen name="wh_standard_margin_m01">16dp</dimen>
+    <dimen name="wh_standard_margin_m02">24dp</dimen>
+    <dimen name="wh_standard_margin_m03">32dp</dimen>
+
+    <dimen name="wh_medium_margin_01">20dp</dimen>
+
+    <dimen name="wh_field_padding_ver">16dp</dimen>
+    <dimen name="wh_otp_box_size">35dp</dimen>
+    <dimen name="wh_progress_bar_top_margin">50dp</dimen>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryDark">#FF1414</color>
+    <color name="colorAccent">#FFC107</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorYellow">#FFC107</color>
+    <color name="colorBlack">#282929</color>
+    <color name="colorDuo">#8C8E8E</color>
+    <color name="colorLight">#E9ECEC</color>
+
+    <color name="colorDivider">#8C8E8E</color>
+
+    <color name="colorText">@color/colorPrimary</color>
+    <color name="colorTextError">#FF0000</color>
+
+    <color name="colorButtonText">@color/colorWhite</color>
+</resources>
